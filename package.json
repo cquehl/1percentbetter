@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://cquehl.github.io/1percentbetter",
+  "homepage": "https://1percentbetter.net",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
