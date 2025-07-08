@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://1percentbetter.net",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",

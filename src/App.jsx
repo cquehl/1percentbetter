@@ -1,6 +1,6 @@
 import React from 'react';
 
-// SVG Icon for the mail link for a nice visual touch.
+// SVG Icon for the mail link
 const MailIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,17 +20,16 @@ const MailIcon = () => (
 );
 
 function App() {
-  // Color palette from your style guide PDF
+  // The new hybrid color palette you provided
   const colors = {
-    primaryDark: '#0A2342',
-    accent: '#FFB703',
-    background: '#F8F9FA',
+    primaryDark: '#380a3e', // Your deep purple
+    accent: '#c32cd6',       // Your vibrant purple accent
+    quoteBackground: '#f2eaf4', // A lighter version of your background for better contrast
     textPrimary: '#212529',
     textSecondary: '#6c757d',
     white: '#FFFFFF',
   };
 
-  // Inline styles for easy application without needing a CSS framework setup
   const styles = {
     page: {
       minHeight: '100vh',
@@ -40,7 +39,8 @@ function App() {
       justifyContent: 'center',
       padding: '1rem',
       fontFamily: '"Inter", "system-ui", "Avenir", "Helvetica", "Arial", sans-serif',
-      background: `linear-gradient(135deg, ${colors.primaryDark}, #000000)`,
+      // Using your new dark purple for the background gradient
+      background: `linear-gradient(135deg, ${colors.primaryDark}, #1a021d)`,
     },
     mainCard: {
       width: '100%',
@@ -59,14 +59,14 @@ function App() {
       fontSize: '3rem',
       fontWeight: '800',
       letterSpacing: '-0.025em',
-      color: colors.primaryDark,
+      color: colors.textPrimary, // Dark text on the white card
       marginBottom: '0.5rem',
     },
     accentBar: {
       width: '4rem',
       height: '0.25rem',
       margin: '0 auto 2rem auto',
-      backgroundColor: colors.accent,
+      backgroundColor: colors.accent, // Using your vibrant purple
     },
     comingSoonTitle: {
       fontSize: '2.25rem',
@@ -83,15 +83,15 @@ function App() {
     quoteSection: {
       padding: '1.5rem',
       borderRadius: '0.75rem',
-      backgroundColor: colors.background,
+      backgroundColor: colors.quoteBackground, // Using a light purple for the quote box
       margin: '2.5rem 0',
-      borderLeft: `4px solid ${colors.accent}`,
+      borderLeft: `4px solid ${colors.accent}`, // Vibrant purple border
     },
     quoteText: {
       fontFamily: 'serif',
       fontSize: '1.5rem',
       fontStyle: 'italic',
-      color: colors.primaryDark,
+      color: colors.primaryDark, // Deep purple text for the quote
       lineHeight: '1.6',
     },
     quoteCite: {
@@ -117,13 +117,13 @@ function App() {
       fontWeight: '500',
       borderRadius: '0.5rem',
       textDecoration: 'none',
-      backgroundColor: colors.primaryDark,
+      backgroundColor: colors.primaryDark, // Deep purple button
       color: colors.white,
       transition: 'background-color 0.3s ease, transform 0.2s ease',
     },
     footer: {
       padding: '1rem',
-      backgroundColor: colors.primaryDark,
+      backgroundColor: colors.primaryDark, // Deep purple footer
       color: 'rgba(255, 255, 255, 0.7)',
       fontSize: '0.875rem',
     },
@@ -133,7 +133,7 @@ function App() {
     <div style={styles.page}>
       <div style={styles.mainCard}>
         <div style={styles.cardContent}>
-          <h1 style={styles.logoHeader}>1% BETTER</h1>
+          <h1 style={styles.logoHeader}>1 PERCENT BETTER</h1>
           <div style={styles.accentBar}></div>
 
           <h2 style={styles.comingSoonTitle}>Our New Home is Coming Soon</h2>
@@ -151,18 +151,17 @@ function App() {
           </div>
 
           <div>
-            <h3 style={styles.contactTitle}>Get In Touch</h3>
+            <h3 style={styles.contactTitle}>Interested in youth baseball, volleyball or wrestling?</h3>
+            <h3 style={styles.contactTitle}>Get In Touch!</h3>
             <a
               href="mailto:info@1percentbetter.org"
               style={styles.contactLink}
               onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = colors.accent;
-                e.currentTarget.style.color = colors.primaryDark;
+                e.currentTarget.style.backgroundColor = colors.accent; // Vibrant purple on hover
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.backgroundColor = colors.primaryDark;
-                e.currentTarget.style.color = colors.white;
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
