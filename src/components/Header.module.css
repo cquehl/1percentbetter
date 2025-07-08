@@ -1,0 +1,32 @@
+.headerContainer {
+  padding: 2.5rem 2.5rem 0; /* Adjusted padding */
+}
+
+.logoHeader {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #212529;
+  margin: 0;
+}
+
+.accentBar {
+  width: 4rem;
+  height: 0.25rem;
+  margin: 1rem auto 2rem auto;
+  background-color: #c32cd6;
+}
+
+.comingSoonTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.comingSoonText {
+  font-size: 1.125rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
