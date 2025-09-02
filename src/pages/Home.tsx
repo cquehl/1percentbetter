@@ -34,6 +34,80 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* News Feature Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-secondary text-gray-900 rounded-full px-4 py-2 mb-4">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L13.09 8.26L19 7L14.74 12L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12L5 7L10.91 8.26L12 2Z"/>
+              </svg>
+              <span className="font-semibold">As Featured In</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Media Coverage</h2>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <a
+              href="https://spectrumnews1.com/oh/columbus/news/2025/06/20/wrestling-for-a-cause-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+            >
+              {/* Article Preview Card */}
+              <div className="md:flex">
+                {/* Image/Video Placeholder */}
+                <div className="md:w-1/2 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center min-h-[300px]">
+                  <div className="text-center text-white p-8">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <p className="text-lg font-semibold">Watch the Story</p>
+                    <p className="text-sm text-gray-200">Click to view article</p>
+                  </div>
+                </div>
+                
+                {/* Article Content */}
+                <div className="md:w-1/2 p-8">
+                  <div className="flex items-center gap-2 mb-4">
+                    <img 
+                      src="https://spectrumnews1.com/content/dam/news/common/spectrum-news-logo-black.png" 
+                      alt="Spectrum News 1" 
+                      className="h-6"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling.style.display = 'block';
+                      }}
+                    />
+                    <span className="text-primary font-bold text-lg hidden">Spectrum News 1</span>
+                  </div>
+                  
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                    Wrestling for a Cause
+                  </h3>
+                  
+                  <p className="text-gray-700 mb-4 leading-relaxed">
+                    "1 Percent Better is making a significant impact in the Columbus community through their innovative approach to youth development. The organization combines wrestling training with character building, helping young athletes develop both physical and mental strength."
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">June 20, 2025</span>
+                    <div className="flex items-center gap-1 text-primary">
+                      <span className="text-sm font-medium">Read Full Article</span>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Statement Section */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
