@@ -2,27 +2,17 @@ import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import tseslint from '@typescript-eslint/eslint-plugin'
+import tsparser from '@typescript-eslint/parser'
 
-export default defineConfig([
-  globalIgnores(['dist']),
+export default [
+  { ignores: ['dist'] },
   {
-    files: ['**/*.{js,jsx}'],
-    // Note: 'extends' is not a valid key here in the new flat config.
-    // Instead, you should spread the configs as shown below.
-  },
-  
-  // Base recommended configurations
-  js.configs.recommended,
-  
-  // Configuration for React
-  {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parser: tsparser,
       parserOptions: {
         ecmaFeatures: { jsx: true },
       },
@@ -30,14 +20,14 @@ export default defineConfig([
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      '@typescript-eslint': tseslint,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': 'warn',
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
     },
   },
-
-  // This MUST be the last configuration to disable styling rules.
-  eslintConfigPrettier,
-])
+]

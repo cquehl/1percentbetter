@@ -1,15 +1,69 @@
-/* Import the "Inter" font for a clean, modern look */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-/* Basic CSS Reset */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-primary: #1A73E8;
+  --color-primary-50: #E8F2FF;
+  --color-primary-100: #CCE4FF;
+  --color-primary-200: #99C9FF;
+  --color-primary-300: #66AFFF;
+  --color-primary-400: #3394FF;
+  --color-primary-500: #1A73E8;
+  --color-primary-600: #1557B8;
+  --color-primary-700: #103C88;
+  --color-primary-800: #0A2058;
+  --color-primary-900: #051028;
+  
+  --color-secondary: #FFC107;
+  --color-secondary-50: #FFF8E1;
+  --color-secondary-100: #FFECB3;
+  --color-secondary-200: #FFE082;
+  --color-secondary-300: #FFD54F;
+  --color-secondary-400: #FFCA28;
+  --color-secondary-500: #FFC107;
+  --color-secondary-600: #FFB300;
+  --color-secondary-700: #FFA000;
+  --color-secondary-800: #FF8F00;
+  --color-secondary-900: #FF6F00;
+  
+  --font-family-sans: 'Inter', system-ui, sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+@layer base {
+  html {
+    font-family: var(--font-family-sans);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    color: #212529;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-secondary-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
 }
