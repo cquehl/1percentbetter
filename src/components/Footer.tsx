@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               Empowering youth through sports, instilling principles of growth, accountability, and faith.
             </p>
             <div className="flex space-x-4">
-              {/* Social Media Icons - Placeholders */}
+              {/* Social Media Icons */}
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
