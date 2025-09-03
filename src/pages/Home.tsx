@@ -148,8 +148,12 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Baseball Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                <div className="text-6xl">⚾</div>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="/images/Baseball.jpg" 
+                  alt="Baseball training at 1 Percent Better" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Baseball</h3>
@@ -167,8 +171,12 @@ const Home: React.FC = () => {
 
             {/* Volleyball Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                <div className="text-6xl">🏐</div>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="/images/Volleyball.jpg" 
+                  alt="Volleyball training at 1 Percent Better" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Volleyball</h3>
@@ -186,8 +194,12 @@ const Home: React.FC = () => {
 
             {/* Wrestling Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
-                <div className="text-6xl">🤼</div>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="/images/Wrestling.jpg" 
+                  alt="Wrestling training at 1 Percent Better" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Wrestling</h3>
