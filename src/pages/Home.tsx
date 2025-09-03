@@ -56,16 +56,23 @@ const Home: React.FC = () => {
             >
               {/* Article Preview Card */}
               <div className="md:flex">
-                {/* Image/Video Placeholder */}
-                <div className="md:w-1/2 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center min-h-[300px]">
-                  <div className="text-center text-white p-8">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
+                {/* Article Video Thumbnail */}
+                <div className="md:w-1/2 relative min-h-[300px] overflow-hidden">
+                  <img 
+                    src="/images/Wrestling for a cause.png" 
+                    alt="Youth wrestlers training at 1 Percent Better - Spectrum News 1 coverage" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-center text-white">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <p className="text-lg font-semibold">Watch the Story</p>
+                      <p className="text-sm text-gray-200">Click to view article</p>
                     </div>
-                    <p className="text-lg font-semibold">Watch the Story</p>
-                    <p className="text-sm text-gray-200">Click to view article</p>
                   </div>
                 </div>
                 
