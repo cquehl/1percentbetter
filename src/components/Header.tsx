@@ -20,7 +20,12 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">
+              <img 
+                src="/images/1PercentBetterLogo.jpg" 
+                alt="1 Percent Better Logo" 
+                className="h-12 md:h-16 w-auto"
+              />
+              <div className="ml-3 text-xl md:text-2xl font-bold text-primary">
                 1 PERCENT BETTER
               </div>
             </Link>
