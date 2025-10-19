@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
 import GetInvolved from './pages/GetInvolved';
+import Raffle from './pages/Raffle';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path="/raffle" element={<Raffle />} />
           </Routes>
         </main>
         <Footer />

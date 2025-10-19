@@ -27,7 +27,10 @@
   --color-secondary-700: #374151;
   --color-secondary-800: #1F2937; /* Base Dark Gray/Black */
   --color-secondary-900: #111821;
-  
+
+  /* --- Override default white to prevent vertical line artifacts --- */
+  --color-white: #FEFEFE;
+
   --font-family-sans: 'Inter', system-ui, sans-serif;
 }
 

@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-16 md:pb-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Building Better Futures,<br />
@@ -30,6 +30,14 @@ const Home: React.FC = () => {
                 Get Involved
               </Link>
             </div>
+            <div className="mt-8 flex justify-center md:justify-end md:mr-12 lg:mr-20">
+              <div className="text-right">
+                <p className="text-lg md:text-xl text-white/90 italic mb-1" style={{ fontFamily: 'Georgia, serif' }}>
+                  "As iron sharpens iron, so one person sharpens another."
+                </p>
+                <cite className="text-white font-semibold text-sm" style={{ fontFamily: 'Georgia, serif' }}>— Proverbs 27:17</cite>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -42,16 +50,89 @@ const Home: React.FC = () => {
               Turning Obstacles Into Opportunities
             </h2>
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 At 1 Percent Better, we believe in the transformative power of youth sports. We're dedicated to fostering environments where young athletes can grow not just in skill, but in character. Through disciplined training, communal accountability, and unwavering faith, we guide them toward becoming exceptional individuals, both on and off the field.
               </p>
-              <div className="bg-white rounded-lg p-8 shadow-lg border-l-4 border-primary">
-                <blockquote className="text-xl md:text-2xl text-gray-800 italic font-medium">
-                  "As iron sharpens iron, so one person sharpens another."
-                </blockquote>
-                <cite className="block text-primary font-semibold mt-4">Proverbs 27:17</cite>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Raffle Teaser Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Link to="/raffle">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-amber-500 text-gray-900 rounded-full px-5 py-2.5 mb-4 shadow-lg shadow-amber-400/40 hover:shadow-xl hover:shadow-amber-500/50 transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <svg className="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L13.09 8.26L19 7L14.74 12L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12L5 7L10.91 8.26L12 2Z"/>
+                </svg>
+                <span className="font-bold text-sm tracking-wide uppercase">Support Our Programs</span>
+              </div>
+            </Link>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">1% Better Raffle</h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Link
+              to="/raffle"
+              className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+            >
+              {/* Raffle Preview Card */}
+              <div className="md:flex">
+                {/* Raffle Image */}
+                <div className="md:w-1/2 relative overflow-hidden bg-primary">
+                  <img
+                    src="/images/1PercentBetterRaffle-thumb.jpg"
+                    alt="1% Better Raffle - Win amazing prizes while supporting youth programs"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Raffle Content */}
+                <div className="md:w-1/2 p-8 bg-gradient-to-br from-gray-50 to-white">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                    Win Amazing Prizes & Support Our Athletes!
+                  </h3>
+
+                  <div className="bg-primary-50 border-l-4 border-primary rounded-lg p-4 mb-4">
+                    <p className="text-primary font-bold mb-2">📱 Scan QR Code to Enter</p>
+                    <p className="text-sm text-gray-700">Add name, phone number, and number of tickets on Venmo note</p>
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-amber-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L19 7L14.74 12L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12L5 7L10.91 8.26L12 2Z"/>
+                      </svg>
+                      <p className="text-gray-700"><span className="font-semibold">Grand Prize:</span> ¼ COW - Roughly 120 lbs of Meat</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L19 7L14.74 12L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12L5 7L10.91 8.26L12 2Z"/>
+                      </svg>
+                      <p className="text-gray-700">Plus <span className="font-semibold">4 more incredible prizes</span> - including over $2,000 in prizes!</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50 rounded-lg p-4 mb-6 border-l-4 border-amber-400">
+                    <p className="text-gray-800 font-semibold mb-1">Ticket Pricing:</p>
+                    <p className="text-gray-700">1 for $10 • 6 for $100</p>
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">Support Baseball & Wrestling</span>
+                    <div className="flex items-center gap-1 text-primary">
+                      <span className="text-sm font-medium">View Full Details & Enter</span>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -60,11 +141,11 @@ const Home: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-secondary text-gray-900 rounded-full px-4 py-2 mb-4">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-amber-500 text-gray-900 rounded-full px-5 py-2.5 mb-4 shadow-lg shadow-amber-400/40 hover:shadow-xl hover:shadow-amber-500/50 transition-all duration-300 transform hover:scale-105">
+              <svg className="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2L13.09 8.26L19 7L14.74 12L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12L5 7L10.91 8.26L12 2Z"/>
               </svg>
-              <span className="font-semibold">As Featured In</span>
+              <span className="font-bold text-sm tracking-wide uppercase">As Featured In</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Media Coverage</h2>
           </div>
@@ -80,10 +161,11 @@ const Home: React.FC = () => {
               <div className="md:flex">
                 {/* Article Video Thumbnail */}
                 <div className="md:w-1/2 relative min-h-[300px] overflow-hidden">
-                  <img 
-                    src="/images/Wrestling for a cause.png" 
-                    alt="Youth wrestlers training at 1 Percent Better - Spectrum News 1 coverage" 
+                  <img
+                    src="/images/Wrestling for a cause.jpg"
+                    alt="Youth wrestlers training at 1 Percent Better - Spectrum News 1 coverage"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div className="text-center text-white">
@@ -101,13 +183,17 @@ const Home: React.FC = () => {
                 {/* Article Content */}
                 <div className="md:w-1/2 p-8">
                   <div className="flex items-center gap-2 mb-4">
-                    <img 
-                      src="https://spectrumnews1.com/content/dam/news/common/spectrum-news-logo-black.png" 
-                      alt="Spectrum News 1" 
+                    <img
+                      src="https://spectrumnews1.com/content/dam/news/common/spectrum-news-logo-black.png"
+                      alt="Spectrum News 1"
                       className="h-6"
                       onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextElementSibling.style.display = 'block';
+                        const element = e.currentTarget as HTMLImageElement;
+                        element.style.display = 'none';
+                        const nextElement = element.nextElementSibling;
+                        if (nextElement) {
+                          (nextElement as HTMLElement).style.display = 'block';
+                        }
                       }}
                     />
                     <span className="text-primary font-bold text-lg hidden">Spectrum News 1</span>
@@ -151,10 +237,11 @@ const Home: React.FC = () => {
             {/* Baseball Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="/images/Baseball.jpg" 
-                  alt="Baseball training at 1 Percent Better" 
+                <img
+                  src="/images/Baseball.jpg"
+                  alt="Baseball training at 1 Percent Better"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
@@ -174,10 +261,11 @@ const Home: React.FC = () => {
             {/* Volleyball Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="/images/Volleyball.jpg" 
-                  alt="Volleyball training at 1 Percent Better" 
+                <img
+                  src="/images/Volleyball.jpg"
+                  alt="Volleyball training at 1 Percent Better"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
@@ -197,10 +285,11 @@ const Home: React.FC = () => {
             {/* Wrestling Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="/images/Wrestling.jpg" 
-                  alt="Wrestling training at 1 Percent Better" 
+                <img
+                  src="/images/Wrestling.jpg"
+                  alt="Wrestling training at 1 Percent Better"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">

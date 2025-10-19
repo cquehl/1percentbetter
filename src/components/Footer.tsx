@@ -116,14 +116,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm mb-4 md:mb-0">
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="text-gray-400 text-sm text-center">
             © {currentYear} 1 Percent Better. A 501(c)(3) non-profit organization. All rights reserved.
-          </div>
-          <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-              Privacy Policy
-            </a>
           </div>
         </div>
       </div>

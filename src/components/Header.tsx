@@ -20,10 +20,10 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/images/1PercentBetterLogo.jpg" 
-                alt="1 Percent Better Logo" 
-                className="h-12 md:h-16 w-auto"
+              <img
+                src="/images/1PercentBetterLogo.jpg"
+                alt="1 Percent Better Logo"
+                className="h-16 md:h-20 w-auto"
               />
               <div className="ml-3 text-xl md:text-2xl font-bold text-primary">
                 1 PERCENT BETTER
@@ -66,12 +66,22 @@ const Header: React.FC = () => {
             <Link
               to="/get-involved"
               className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                isActive('/get-involved') 
-                  ? 'text-primary border-b-2 border-primary' 
+                isActive('/get-involved')
+                  ? 'text-primary border-b-2 border-primary'
                   : 'text-gray-700 hover:text-primary'
               }`}
             >
               Get Involved
+            </Link>
+            <Link
+              to="/raffle"
+              className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                isActive('/raffle')
+                  ? 'text-amber-500 border-b-2 border-amber-500'
+                  : 'text-amber-600 hover:text-amber-500 font-semibold'
+              }`}
+            >
+              🎟️ Raffle
             </Link>
           </nav>
 
@@ -125,7 +135,7 @@ const Header: React.FC = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
             <Link
               to="/"
               className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
@@ -162,13 +172,24 @@ const Header: React.FC = () => {
             <Link
               to="/get-involved"
               className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                isActive('/get-involved') 
-                  ? 'text-primary bg-primary-50' 
+                isActive('/get-involved')
+                  ? 'text-primary bg-primary-50'
                   : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Get Involved
+            </Link>
+            <Link
+              to="/raffle"
+              className={`block px-3 py-2 text-base font-semibold transition-colors duration-200 ${
+                isActive('/raffle')
+                  ? 'text-amber-500 bg-amber-50'
+                  : 'text-amber-600 hover:text-amber-500 hover:bg-amber-50'
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              🎟️ Raffle - Win Prizes!
             </Link>
             <div className="px-3 py-2">
               <a
