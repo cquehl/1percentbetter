@@ -10,8 +10,15 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Mission */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">
-              1 PERCENT BETTER
+            <div className="flex items-center mb-4">
+              <img 
+                src="/images/1PercentBetterLogo.jpg" 
+                alt="1 Percent Better Logo" 
+                className="h-12 w-auto mr-3"
+              />
+              <div className="text-2xl font-bold text-white">
+                1 PERCENT BETTER
+              </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Empowering youth through sports, instilling principles of growth, accountability, and faith.
@@ -19,7 +26,9 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               {/* Social Media Icons */}
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61562997475829&mibextid=wwXIfr&rdid=W6JcXa9yevhTCOj8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ELfsrD77J%2F%3Fmibextid%3DwwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="Facebook"
               >
@@ -50,7 +59,9 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/1-percentbetter/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="LinkedIn"
               >
@@ -94,10 +105,10 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <p className="text-gray-300">
                 <a
-                  href="mailto:info@1percentbetter.net"
+                  href="mailto:Onepercentbetter1@hotmail.com"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  info@1percentbetter.net
+                  Onepercentbetter1@hotmail.com
                 </a>
               </p>
             </div>
