@@ -14,7 +14,7 @@ const Home: React.FC = () => {
               <span className="text-secondary">One Percent At A Time</span>
             </h1>
             <h2 className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Empowering Youth Through Sports, Accountability, and Faith
+              Empowering Youth Through Faith, Adversity, and Accountability
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -29,6 +29,28 @@ const Home: React.FC = () => {
               >
                 Get Involved
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Statement Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Turning Obstacles Into Opportunities
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                At 1 Percent Better, we believe in the transformative power of youth sports. We're dedicated to fostering environments where young athletes can grow not just in skill, but in character. Through disciplined training, communal accountability, and unwavering faith, we guide them toward becoming exceptional individuals, both on and off the field.
+              </p>
+              <div className="bg-white rounded-lg p-8 shadow-lg border-l-4 border-primary">
+                <blockquote className="text-xl md:text-2xl text-gray-800 italic font-medium">
+                  "As iron sharpens iron, so one person sharpens another."
+                </blockquote>
+                <cite className="block text-primary font-semibold mt-4">Proverbs 27:17</cite>
+              </div>
             </div>
           </div>
         </div>
@@ -115,27 +137,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission Statement Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Our Purpose
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-                At 1 Percent Better, we believe in the transformative power of youth sports. We're dedicated to fostering environments where young athletes can grow not just in skill, but in character. Through disciplined training, communal accountability, and unwavering faith, we guide them toward becoming exceptional individuals, both on and off the field.
-              </p>
-              <div className="bg-white rounded-lg p-8 shadow-lg border-l-4 border-primary">
-                <blockquote className="text-xl md:text-2xl text-gray-800 italic font-medium">
-                  "As iron sharpens iron, so one person sharpens another."
-                </blockquote>
-                <cite className="block text-primary font-semibold mt-4">Proverbs 27:17</cite>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Sports Overview Section */}
       <section className="py-16 md:py-24 bg-white">
