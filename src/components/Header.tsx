@@ -16,14 +16,14 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+        <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
                 src="/images/1PercentBetterLogo.jpg"
                 alt="1 Percent Better Logo"
-                className="h-16 md:h-20 w-auto"
+                className="h-20 md:h-24 w-auto"
               />
               <div className="ml-3 text-xl md:text-2xl font-bold text-primary">
                 1 PERCENT BETTER

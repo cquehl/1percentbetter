@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Building Better Futures,<br />
-              <span className="text-secondary">One Percent At A Time</span>
+              <span className="text-secondary">1 Percent At A Time</span>
             </h1>
             <h2 className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
               Empowering Youth Through Faith, Adversity, and Accountability
