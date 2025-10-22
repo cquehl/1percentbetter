@@ -118,7 +118,7 @@ const Home: React.FC = () => {
 
                   <div className="bg-amber-50 rounded-lg p-4 mb-6 border-l-4 border-amber-400">
                     <p className="text-gray-800 font-semibold mb-1">Ticket Pricing:</p>
-                    <p className="text-gray-700">1 for $10 • 6 for $100</p>
+                    <p className="text-gray-700">1 for $20 • 6 for $100</p>
                   </div>
 
                   <div className="flex items-center justify-between">

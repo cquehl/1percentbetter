@@ -94,7 +94,7 @@ const Raffle: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div className="bg-white rounded-lg p-8 shadow-lg border-t-4 border-primary text-center">
-              <div className="text-5xl font-bold text-primary mb-2">$10</div>
+              <div className="text-5xl font-bold text-primary mb-2">$20</div>
               <div className="text-2xl text-gray-700 font-semibold mb-4">1 Ticket</div>
               <p className="text-gray-600">Single entry into the raffle</p>
             </div>
