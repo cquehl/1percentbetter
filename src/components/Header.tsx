@@ -85,13 +85,19 @@ const Header: React.FC = () => {
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex gap-3">
+            <Link
+              to="/subscribe"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:shadow-lg transition-all duration-200"
+            >
+              Subscribe
+            </Link>
             <a
               href="mailto:info@1percentbetter.net"
-              className="btn-primary"
+              className="btn-outline"
             >
-              Get In Touch
+              Contact
             </a>
           </div>
 
@@ -191,13 +197,20 @@ const Header: React.FC = () => {
             >
               🎟️ Raffle - Win Prizes!
             </Link>
-            <div className="px-3 py-2">
-              <a
-                href="mailto:info@1percentbetter.net"
-                className="btn-primary w-full text-center block"
+            <div className="px-3 py-2 space-y-2">
+              <Link
+                to="/subscribe"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-3 rounded-lg font-semibold text-center block hover:shadow-lg transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get In Touch
+                Subscribe Monthly
+              </Link>
+              <a
+                href="mailto:info@1percentbetter.net"
+                className="btn-outline w-full text-center block"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
               </a>
             </div>
           </div>
