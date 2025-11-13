@@ -7,6 +7,9 @@ import About from './pages/About';
 import Programs from './pages/Programs';
 import GetInvolved from './pages/GetInvolved';
 import Raffle from './pages/Raffle';
+import Subscribe from './pages/Subscribe';
+import SubscribeSuccess from './pages/SubscribeSuccess';
+import SubscribeCancel from './pages/SubscribeCancel';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +23,9 @@ const App: React.FC = () => {
             <Route path="/programs" element={<Programs />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/raffle" element={<Raffle />} />
+            <Route path="/subscribe" element={<Subscribe />} />
+            <Route path="/subscribe/success" element={<SubscribeSuccess />} />
+            <Route path="/subscribe/cancel" element={<SubscribeCancel />} />
           </Routes>
         </main>
         <Footer />
